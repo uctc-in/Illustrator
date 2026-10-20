@@ -1,0 +1,26 @@
+{
+  "name": "Adobe Illustrator — Professional Graphic Design Course",
+  "short_name": "Ai Course",
+  "description": "Interactive Adobe Illustrator course: tools, typography, color, logo design, branding, print, digital and AI-assisted workflows.",
+  "id": "./index.html",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#0B0D12",
+  "theme_color": "#0B0D12",
+  "categories": ["education", "design", "productivity"],
+  "lang": "en",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Final Exam & Certificate", "short_name": "Exam", "url": "./exam.html" },
+    { "name": "Tool Explorer", "short_name": "Tools", "url": "./index.html#tools" },
+    { "name": "Design Lab", "short_name": "Design Lab", "url": "./index.html#designlab" },
+    { "name": "Logo Builder", "short_name": "Logo", "url": "./index.html#logobuilder" },
+    { "name": "Keyboard Shortcuts", "short_name": "Shortcuts", "url": "./index.html#shortcuts" }
+  ]
+}

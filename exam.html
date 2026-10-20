@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Final Exam & Certificate — Illustrator Professional Graphic Design Course</title>
+<meta name="description" content="Take the final exam of the Adobe Illustrator Professional Graphic Design Course and earn a personalized, downloadable certificate.">
+<meta name="theme-color" content="#0B0D12">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style>
+:root{--bg:#0B0D12;--surface:#151922;--surface2:#1C2230;--red:#FF0000;--red2:#FF3B30;--gray:#A8AFBD;--cyan:#20D9C2;--purple:#7C5CFC;--yellow:#FFB547;--border:rgba(255,255,255,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:#E6E9F0;font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.display{font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-.01em}
+.serif{font-family:"Playfair Display",Georgia,serif}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.grid-bg{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:40px 40px}
+.glass{background:rgba(21,25,34,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--border);border-radius:1.25rem;box-shadow:0 10px 40px -20px rgba(0,0,0,.8)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:1.1rem}
+.glow-line{height:2px;background:linear-gradient(90deg,transparent,var(--red2),var(--purple),var(--cyan),transparent);box-shadow:0 0 18px rgba(255,59,48,.5)}
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gray);font-weight:600}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--red2)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;border-radius:.8rem;padding:.8rem 1.35rem;transition:all .2s;border:1px solid transparent;cursor:pointer;min-height:44px}
+.btn-primary{background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;box-shadow:0 8px 30px -10px rgba(255,59,48,.7)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.09)}
+.btn-sm{padding:.45rem .85rem;font-size:.85rem;border-radius:.6rem;min-height:36px}
+.input{background:#0B0D12;border:1px solid rgba(255,255,255,.14);border-radius:.7rem;padding:.65rem .9rem;color:#fff;width:100%;outline:none;font-size:16px}
+.input:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(32,217,194,.15)}
+.tag{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .55rem;border-radius:.4rem}
+.tag-beg{background:rgba(32,217,194,.15);color:var(--cyan)}
+.tag-int{background:rgba(255,181,71,.15);color:var(--yellow)}
+.tag-adv{background:rgba(124,92,252,.18);color:#B4A4FF}
+.tag-pro{background:rgba(255,59,48,.18);color:#FF8A80}
+.tag-ai{background:linear-gradient(90deg,rgba(124,92,252,.3),rgba(32,217,194,.3));color:#fff}
+.tag-core{background:rgba(255,255,255,.08);color:#D5DAE3}
+.badge-ai{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:14px;background:#330000;color:#FF9A00;font-family:"Space Grotesk";font-weight:700;font-size:1.7rem;border:2px solid #FF9A00;box-shadow:0 0 30px rgba(255,154,0,.35)}
+kbd{font-family:"JetBrains Mono",monospace;font-size:.75rem;background:#0B0D12;border:1px solid rgba(255,255,255,.18);border-bottom-width:2px;border-radius:.4rem;padding:.15rem .45rem;color:#fff}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.q-opt{display:flex;gap:.8rem;align-items:flex-start;padding:.85rem 1rem;border:1px solid var(--border);border-radius:.8rem;cursor:pointer;transition:all .15s;background:rgba(255,255,255,.02)}
+.q-opt:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.05)}
+.q-opt input{width:20px;height:20px;accent-color:var(--red2);margin-top:.15rem;flex:none}
+.q-opt.selected{border-color:var(--red2);background:rgba(255,59,48,.1)}
+.q-opt.correct{border-color:var(--cyan);background:rgba(32,217,194,.12)}
+.q-opt.wrong{border-color:var(--red2);background:rgba(255,59,48,.15)}
+.pal-btn{width:38px;height:38px;border-radius:.55rem;border:1px solid var(--border);background:var(--surface2);font-size:.8rem;font-weight:600;color:var(--gray);cursor:pointer;transition:all .15s;position:relative}
+.pal-btn:hover{border-color:rgba(255,255,255,.35)}
+.pal-btn.current{border-color:#fff;color:#fff;box-shadow:0 0 0 2px rgba(255,255,255,.25)}
+.pal-btn.answered{background:rgba(32,217,194,.18);border-color:var(--cyan);color:var(--cyan)}
+.pal-btn.flagged::after{content:"⚑";position:absolute;top:-6px;right:-6px;color:var(--yellow);font-size:.8rem}
+.pal-btn.review-wrong{background:rgba(255,59,48,.2);border-color:var(--red2);color:#FF8A80}
+.pal-btn.review-right{background:rgba(32,217,194,.15);border-color:var(--cyan);color:var(--cyan)}
+#timer.warn{color:#FF8A80}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+@media print{body{background:#fff}.print-only{display:block!important}}
+.print-only{display:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="grid-bg">
+<header class="sticky top-0 z-40 bg-[#0B0D12]/85 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center gap-3">
+    <a href="index.html" class="btn btn-ghost btn-sm"><i data-lucide="arrow-left" class="w-4 h-4"></i><span class="hidden sm:inline">Back to course</span></a>
+    <a href="index.html" class="flex items-center gap-2.5 font-bold ml-1"><span class="badge-ai !w-9 !h-9 !text-sm !rounded-lg">Ai</span><span class="hidden sm:block text-sm leading-tight">Illustrator Course<span class="block text-[10px] tracking-[.2em] text-[#A8AFBD] font-semibold uppercase">Final Exam</span></span></a>
+    <span class="ml-auto text-xs text-[#A8AFBD] hidden md:block">36 questions · 30 minutes · pass mark 70%</span>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-10">
+
+<!-- HOME -->
+<section id="exam-home">
+  <div class="glow-line max-w-xs mb-8"></div>
+  <span class="eyebrow">Final assessment</span>
+  <h1 class="text-4xl sm:text-5xl font-bold mt-3">Final Exam &<br><span class="bg-gradient-to-r from-[#FF3B30] via-[#7C5CFC] to-[#20D9C2] bg-clip-text text-transparent">Professional Certificate</span></h1>
+  <p class="text-[#A8AFBD] mt-4 max-w-2xl">Test everything you learned: tools and shortcuts, color, typography, shapes and Pathfinder, print and export, professional workflow, and AI-assisted design. Score 70% or more and a personalized certificate is generated automatically — download it as PNG or print it.</p>
+  <div class="grid md:grid-cols-3 gap-4 mt-8">
+    <div class="card p-5"><div class="text-3xl font-bold text-[#FF8A80]">36</div><div class="font-semibold">Questions</div><p class="text-xs text-[#A8AFBD] mt-1">6 categories, mixed difficulty</p></div>
+    <div class="card p-5"><div class="text-3xl font-bold text-[#FFB547]">30<span class="text-lg">min</span></div><div class="font-semibold">Time limit</div><p class="text-xs text-[#A8AFBD] mt-1">Auto-submits when time runs out</p></div>
+    <div class="card p-5"><div class="text-3xl font-bold text-[#20D9C2]">70%</div><div class="font-semibold">Pass mark</div><p class="text-xs text-[#A8AFBD] mt-1">Certificate issued on pass</p></div>
+  </div>
+  <div class="glass p-6 mt-6 max-w-2xl">
+    <label class="block text-sm font-semibold mb-2" for="ex-name">Your full name (appears on the certificate)</label>
+    <input id="ex-name" class="input" placeholder="e.g. Maya Chen" maxlength="40" autocomplete="name">
+    <div class="flex flex-wrap gap-3 mt-4">
+      <button id="ex-start" class="btn btn-primary"><i data-lucide="play" class="w-4 h-4"></i>Start the exam</button>
+      <button id="ex-resume" class="btn btn-ghost hidden"><i data-lucide="history" class="w-4 h-4"></i>Resume saved exam</button>
+    </div>
+    <p id="ex-best" class="text-xs text-[#A8AFBD] mt-3"></p>
+    <div class="mt-4 text-xs text-[#A8AFBD] border-t border-white/10 pt-4">
+      <b class="text-white">Rules:</b> one attempt at a time · you can flag questions and return to them · answers are saved in this browser if you refresh · keyboard: <kbd>1</kbd>–<kbd>4</kbd> choose an answer, <kbd>←</kbd> <kbd>→</kbd> navigate, <kbd>F</kbd> flag.
+      <br><b class="text-white mt-1 block">Certificate note:</b> this certificate is issued by this independent course website. It is not an Adobe certification or exam.
+    </div>
+  </div>
+</section>
+
+<!-- RUN -->
+<section id="exam-run" class="hidden">
+  <div class="sticky top-16 z-30 glass px-4 py-3 mb-6 flex flex-wrap items-center gap-3">
+    <span class="flex items-center gap-2 font-semibold"><i data-lucide="clock" class="w-4 h-4"></i><span id="ex-timer" class="mono text-lg" role="timer" aria-live="off">30:00</span></span>
+    <span class="text-sm text-[#A8AFBD]"><span id="ex-progress">1</span> / <span id="ex-total">36</span></span>
+    <span class="text-sm text-[#A8AFBD] hidden sm:inline">Answered: <b id="ex-answered" class="text-white">0</b> · Flagged: <b id="ex-flagged" class="text-[#FFB547]">0</b></span>
+    <button id="ex-submit" class="btn btn-primary btn-sm ml-auto"><i data-lucide="check-circle-2" class="w-4 h-4"></i>Submit exam</button>
+  </div>
+  <div class="grid lg:grid-cols-[1fr_220px] gap-6">
+    <div>
+      <div class="card p-6" id="ex-question-card" aria-live="polite"></div>
+      <div class="flex justify-between mt-4">
+        <button id="ex-prev" class="btn btn-ghost"><i data-lucide="arrow-left" class="w-4 h-4"></i>Previous</button>
+        <button id="ex-next" class="btn btn-ghost">Next<i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+      </div>
+    </div>
+    <aside class="card p-4 h-fit lg:sticky lg:top-32">
+      <div class="text-xs text-[#A8AFBD] uppercase tracking-widest font-bold mb-2">Question palette</div>
+      <div class="grid grid-cols-6 lg:grid-cols-4 gap-1.5" id="ex-palette"></div>
+      <div class="mt-4 space-y-1.5 text-[11px] text-[#A8AFBD]">
+        <div><span class="inline-block w-3 h-3 rounded-sm bg-[rgba(32,217,194,.18)] border border-[#20D9C2] align-middle mr-1.5"></span>Answered</div>
+        <div><span class="inline-block w-3 h-3 rounded-sm bg-[#1C2230] border border-white/20 align-middle mr-1.5"></span>Unanswered</div>
+        <div><span class="inline-block w-3 h-3 rounded-sm bg-[#1C2230] border border-white/20 align-middle mr-1.5 relative">⚑</span>Flagged for review</div>
+      </div>
+      <button id="ex-flag" class="btn btn-ghost btn-sm w-full mt-4 justify-center"><i data-lucide="flag" class="w-4 h-4"></i><span id="ex-flag-txt">Flag for review</span></button>
+    </aside>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="exam-results" class="hidden">
+  <div id="ex-result-head"></div>
+  <div class="grid lg:grid-cols-3 gap-6 mt-8">
+    <div class="glass p-6 text-center">
+      <svg viewBox="0 0 200 200" class="w-48 h-48 mx-auto">
+        <circle cx="100" cy="100" r="84" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="14"/>
+        <circle id="ex-ring" cx="100" cy="100" r="84" fill="none" stroke="url(#ex-grad)" stroke-width="14" stroke-linecap="round" stroke-dasharray="527.8" stroke-dashoffset="527.8" transform="rotate(-90 100 100)" style="transition:stroke-dashoffset .8s"/>
+        <defs><linearGradient id="ex-grad"><stop offset="0" stop-color="#FF3B30"/><stop offset="1" stop-color="#20D9C2"/></linearGradient></defs>
+        <text id="ex-score" x="100" y="98" text-anchor="middle" fill="#fff" font-family="Space Grotesk" font-weight="700" font-size="44">0%</text>
+        <text x="100" y="126" text-anchor="middle" fill="#A8AFBD" font-size="12" id="ex-score-sub">of 100</text>
+      </svg>
+      <div id="ex-verdict" class="display text-2xl font-bold mt-2"></div>
+      <p id="ex-verdict-sub" class="text-sm text-[#A8AFBD] mt-1"></p>
+      <div class="flex flex-col gap-2 mt-5">
+        <button id="ex-retake" class="btn btn-ghost justify-center"><i data-lucide="rotate-ccw" class="w-4 h-4"></i>Retake the exam</button>
+        <a href="index.html" class="btn btn-ghost justify-center"><i data-lucide="arrow-left" class="w-4 h-4"></i>Back to the course</a>
+      </div>
+    </div>
+    <div class="lg:col-span-2 space-y-6">
+      <div class="card p-5"><h3 class="font-bold mb-3">Score by category</h3><div id="ex-breakdown" class="space-y-2"></div></div>
+      <div class="card p-5" id="ex-cert-block">
+        <h3 class="font-bold mb-1 flex items-center gap-2"><i data-lucide="award" class="w-5 h-5 text-[#FFB547]"></i>Your certificate</h3>
+        <p class="text-sm text-[#A8AFBD] mb-4" id="ex-cert-note"></p>
+        <div id="ex-cert-actions" class="flex flex-wrap gap-3 hidden">
+          <button id="ex-dl" class="btn btn-primary"><i data-lucide="download" class="w-4 h-4"></i>Download certificate (PNG)</button>
+          <button id="ex-print" class="btn btn-ghost"><i data-lucide="printer" class="w-4 h-4"></i>Print certificate</button>
+          <button id="ex-copy-id" class="btn btn-ghost"><i data-lucide="copy" class="w-4 h-4"></i>Copy verification code</button>
+        </div>
+        <div id="ex-cert-locked" class="tip text-sm hidden" style="border-left:3px solid var(--yellow);background:linear-gradient(90deg,rgba(255,181,71,.1),transparent);padding:.9rem 1.1rem;border-radius:.6rem"></div>
+        <div class="mt-4 overflow-x-auto rounded-xl border border-white/10 bg-[#0B0D12] p-2"><canvas id="ex-canvas" width="1600" height="1131" class="w-full rounded-lg" aria-label="Your certificate"></canvas></div>
+        <p class="text-xs text-[#A8AFBD] mt-2">Preview. The downloaded PNG is 1600×1131 px — print at A4 landscape.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card p-5 mt-6">
+    <h3 class="font-bold mb-3">Review every question</h3>
+    <div id="ex-review" class="space-y-4"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-white/10 mt-14 py-8 text-center text-xs text-[#A8AFBD]">
+  Illustrator Professional Graphic Design Course · <a href="index.html" class="underline hover:text-white">Back to course</a> · Independent educational resource — not affiliated with Adobe.
+</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const PASS_MARK=70, TIME_LIMIT=30*60;
+const CATS=["Tools & Shortcuts","Color & Appearance","Typography","Print & Export","Workflow & Production","Generative AI"];
+const LEVELS=["Beginner","Intermediate","Advanced"];
+const Q=[
+// Tools & Shortcuts
+{q:"Which tool is used to create precise vector paths with Bézier curves?",o:["Paintbrush Tool","Pen Tool (P)","Pencil Tool","Blob Brush Tool"],a:1,c:0,l:0,e:"The Pen Tool creates precise paths: click for corner anchors, click-and-drag for smooth curves with direction handles."},
+{q:"What is the default keyboard shortcut for the Direct Selection Tool?",o:["A","V","P","W"],a:0,c:0,l:0,e:"A selects individual anchor points, segments and handles. V is the Selection Tool."},
+{q:"Which tool adds an anchor point to an existing path without changing the path's shape?",o:["Delete Anchor Point Tool","Add Anchor Point Tool (+)","Anchor Point Tool","Convert Direction Point Tool"],a:1,c:0,l:0,e:"Hover a segment and click. Adding points is for adding control; fixing a bad curve usually means adjusting handles instead."},
+{q:"Which tool varies the width of a stroke along a path by placing width points?",o:["Paintbrush Tool","Width Tool (Shift+W)","Blob Brush Tool","Warp Tool"],a:1,c:0,l:1,e:"Drag width points outward to widen, inward to narrow; Alt-drag affects one side only."},
+{q:"What does the Shape Builder Tool (Shift+M) do with overlapping shapes?",o:["It groups them","It merges or deletes regions interactively by dragging across them","It applies a gradient to them","It converts them to a clipping mask"],a:1,c:0,l:0,e:"Select overlapping shapes, drag across regions to unite them, Alt-drag to delete regions."},
+{q:"Which command repeats the last transformation (move, rotate, scale)?",o:["Copy (Ctrl/Cmd+C)","Paste in Front (Ctrl/Cmd+F)","Transform Again (Ctrl/Cmd+D)","Transform Each (Alt+Shift+Ctrl/Cmd+D)"],a:2,c:0,l:1,e:"Rotate-copy an object by 30°, then press Ctrl/Cmd+D eleven times for a full circle."},
+// Color & Appearance
+{q:"In additive RGB color (screens), red light plus green light produces:",o:["Blue","Yellow","Magenta","White"],a:1,c:1,l:0,e:"Additive mixing: R+G=Y, R+B=Magenta, G+B=Cyan, R+G+B=White."},
+{q:"Why does CMYK printing use a separate Black (K) plate?",o:["Black ink is cheaper than the others","To reduce the file size","Mixing C+M+Y gives a muddy brown, uses 300% ink and never aligns perfectly","Printers only have four ink tanks"],a:2,c:1,l:1,e:"A separate black plate prints crisp text and true blacks. Use rich black (e.g. C60 M40 Y40 K100) only for large areas."},
+{q:"What happens when you edit a global swatch?",o:["Nothing — swatches are static","Every object using that swatch updates automatically","Only the swatch panel changes","The document converts to CMYK"],a:1,c:1,l:0,e:"Global swatches are linked. Change the swatch once and the whole brand palette updates — the core of brand color systems."},
+{q:"The Appearance panel lets you:",o:["Change only the fill color","Stack multiple fills, strokes, effects and opacity non-destructively","Delete layers","Export the file"],a:1,c:1,l:1,e:"Appearance is the non-destructive stack: add fills/strokes, reorder them, attach effects to a single row, save as a Graphic Style."},
+{q:"A clipping mask hides artwork using ____, while an opacity mask uses ____.",o:["the shape of the top object / the luminosity of the top object","the luminosity of the top object / the shape of the top object","the fill color / the stroke color","both use only the shape"],a:0,c:1,l:1,e:"Clipping mask = shape window. Opacity mask = white reveals, black hides, gray is partial (feathered transparency)."},
+{q:"Which tool adds mesh points so each point can hold its own color, blending to neighbours?",o:["Gradient Tool (G)","Mesh Tool (U)","Paintbrush Tool (B)","Eyedropper Tool (I)"],a:1,c:1,l:2,e:"Mesh creates photorealistic shading. Start with a 2×2 or 4×4 mesh and add points only where needed."},
+// Typography
+{q:"Leading is:",o:["the space between two specific letters","the space between lines of text","the font size","the distance below the baseline"],a:1,c:2,l:0,e:"Leading (line spacing) is usually 120–145% of the font size for body text."},
+{q:"Kerning adjusts ____, while tracking adjusts ____.",o:["space between two specific letters / uniform spacing across a range of text","font size / line spacing","color / weight","two lines / two paragraphs"],a:0,c:2,l:0,e:"Kerning is per letter pair (logos). Tracking is uniform across a selection (headlines, small caps)."},
+{q:"The shortcut to convert live text into editable outlines is:",o:["Ctrl/Cmd+Shift+O","Ctrl/Cmd+8","Ctrl/Cmd+7","Shift+Ctrl/Cmd+P"],a:0,c:2,l:0,e:"Create Outlines is irreversible — always keep a live-text master file."},
+{q:"Which tool places text along an open or closed path?",o:["Area Type Tool","Type on a Path Tool","Touch Type Tool","Vertical Type Tool"],a:1,c:2,l:1,e:"Click a path with the Type on a Path tool and type; drag the brackets to reposition or flip the text."},
+{q:"A comfortable line length (measure) for body text is:",o:["20–30 characters","45–75 characters","90–120 characters","the full column width"],a:1,c:2,l:0,e:"45–75 characters per line keeps reading comfortable; adjust column width, not font size."},
+{q:"The Touch Type Tool (Shift+T) lets you:",o:["convert text to outlines","move, scale and rotate individual characters while the text stays live and editable","fill text with a pattern","wrap text around objects"],a:1,c:2,l:1,e:"Each character gets its own bounding box — playful headlines without losing the ability to retype."},
+// Print & Export
+{q:"The standard bleed for most print jobs is:",o:["0.5 mm","3 mm (0.125 in)","10 mm","25 mm"],a:1,c:3,l:0,e:"Bleed extends artwork past the trim edge so no white slivers appear after cutting. Business cards often use 3 mm."},
+{q:"What effective resolution should placed images have for print?",o:["72 ppi","150 ppi","300 ppi","600 ppi"],a:2,c:3,l:0,e:"300 ppi at final placed size. Check the Links panel for low-resolution warnings."},
+{q:"Which color mode should a print document use?",o:["RGB","CMYK","HSB","Grayscale"],a:1,c:3,l:0,e:"Set File > Document Color Mode to CMYK before designing for print; soft-proof with View > Proof Colors."},
+{q:"A commonly used rich black for large printed areas is:",o:["C0 M0 Y0 K100","C100 M100 Y100 K100","C60 M40 Y40 K100","C0 M0 Y0 K0"],a:2,c:3,l:1,e:"Rich black adds CMY under K for depth in large areas. Use plain 100 K for small text to avoid registration problems."},
+{q:"Why is PDF/X-4 the preferred preset for print delivery?",o:["It produces smaller files than JPEG","It preserves live transparency and includes an output intent for the printer","It supports animations","It embeds fonts only"],a:1,c:3,l:1,e:"PDF/X-4 keeps transparency live and carries color management information. Use X-1a for older RIPs that require flattening."},
+{q:"File > Package collects:",o:["Only the AI file","The AI file, linked images, fonts (where licensing permits) and a report","Only the images","Nothing — it is an export tool"],a:1,c:3,l:0,e:"Packaging is the standard way to hand off to a printer: everything travels together with a report."},
+// Workflow & Production
+{q:"The first stage of the professional design process is:",o:["Sketching thumbnails","Writing the client brief","Exporting final files","Packaging the project"],a:1,c:4,l:0,e:"Brief → research → moodboard → sketch → concept → vector development → typography → color → refinement → review → revisions → final → export → delivery."},
+{q:"The Layers panel shortcut is:",o:["F5","F6","F7","Shift+F7"],a:2,c:4,l:0,e:"F7 opens Layers. Shift+F7 is the Align panel."},
+{q:"Smart Guides (alignment hints while dragging) are toggled with:",o:["Ctrl/Cmd+U","Ctrl/Cmd+R","Ctrl/Cmd+G","Ctrl/Cmd+;"],a:0,c:4,l:0,e:"Ctrl/Cmd+U toggles Smart Guides. R is rulers, G is group, ; is guides."},
+{q:"In the 60-30-10 color rule, the 60% is:",o:["the accent color","the dominant color","the background color","the text color"],a:1,c:4,l:0,e:"60% dominant, 30% secondary, 10% accent — the easiest way to keep layouts balanced."},
+{q:"Bleed is:",o:["the safe area where text must sit","artwork extended past the trim edge so no white shows after cutting","the margin inside the page","the tolerance of the cutting machine"],a:1,c:4,l:0,e:"Set bleed in File > Document Setup; extend background artwork into the bleed area."},
+{q:"Before delivering any professional file you should:",o:["Delete all layers to reduce size","Run a final checklist: document setup, fonts, links, colors, alignment, spelling, proof, correct export formats","Convert everything to outlines","Rename all layers 'Layer 1'"],a:1,c:4,l:2,e:"The course's 18-point Final Professional Checklist exists for exactly this."},
+// Generative AI
+{q:"Text to Vector Graphic in Illustrator:",o:["generates a flat raster image","generates editable vector artwork from a text prompt","traces a photograph","removes backgrounds"],a:1,c:5,l:1,e:"Output is real vector: ungroup it, recolor it, edit paths. Availability may vary by version and region."},
+{q:"Generative Shape Fill:",o:["fills a selected shape with editable vector artwork generated from a prompt","resizes the artboard","applies a drop shadow","converts text to outlines"],a:0,c:5,l:1,e:"Select a shape, describe what should fill it. The result is editable vector art clipped to the shape."},
+{q:"Turntable:",o:["prints the artwork","generates multiple rotated views of a 2D object so you can pick angles","deletes unused layers","exports the file as a GIF only"],a:1,c:5,l:2,e:"Slide between angles, extract the views you want for editing, export a GIF. Introduced as a beta feature; availability varies."},
+{q:"Remove Background:",o:["deletes the background layer permanently","creates a transparent background around the detected subject","flattens the image","crops the image to a square"],a:1,c:5,l:0,e:"Check hair, glass and edges at 400% zoom; refine with a clipping mask if needed."},
+{q:"Generative Recolor:",o:["recolors selected artwork from a text description of a palette or mood","changes the document color mode","replaces fonts","exports a PDF"],a:0,c:5,l:0,e:"Type a mood such as 'warm autumn palette', pick a variation, then convert final colors to global swatches."},
+{q:"The professional rule for AI-assisted design is:",o:["AI output can be delivered as final","AI accelerates exploration; the designer remains responsible for the final result","AI replaces the client brief","AI tools own the copyright of outputs"],a:1,c:5,l:1,e:"Evaluate against the brief, refine with the Pen Tool, apply brand systems, check licensing and ethics — then sign the work."}
+];
+const N=Q.length;
+const store=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const load=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}};
+const state={name:"",answers:Array(N).fill(null),flags:Array(N).fill(false),cur:0,time:TIME_LIMIT,started:false,submitted:false,score:0,certId:"",certDate:""};
+const icons=()=>window.lucide&&lucide.createIcons();
+
+/* ---------- home ---------- */
+function fmtTime(s){return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
+function home(){
+ const best=load("ai_exam_best",null);
+ $("#ex-best").textContent=best?`Best result so far: ${best.score}% (${best.date})${best.passed?" — certificate earned ✓":""}`:"No attempt yet. Your best result is saved in this browser.";
+ const saved=load("ai_exam_state",null);
+ if(saved&&saved.started&&!saved.submitted){$("#ex-resume").classList.remove("hidden");$("#ex-name").value=saved.name||""}
+}
+$("#ex-start").onclick=()=>{if(!$("#ex-name").value.trim()){$("#ex-name").focus();$("#ex-name").classList.add("!border-[#FF3B30]");toast("Enter your name first — it appears on the certificate.");return}state.name=$("#ex-name").value.trim();state.started=true;state.submitted=false;state.answers=Array(N).fill(null);state.flags=Array(N).fill(false);state.cur=0;state.time=TIME_LIMIT;save();show("run");renderQ();startTimer()};
+$("#ex-resume").onclick=()=>{const s=load("ai_exam_state",null);if(!s)return;Object.assign(state,s);state.started=true;show("run");renderQ();startTimer()};
+function show(id){["home","run","results"].forEach(s=>{$("#exam-"+s).classList.toggle("hidden",s!==id)});scrollTo({top:0});icons()}
+
+/* ---------- save / timer ---------- */
+function save(){store("ai_exam_state",{...state});}
+let timerId=null;
+function startTimer(){stopTimer();timerId=setInterval(()=>{state.time--;save();renderTimer();if(state.time<=0){stopTimer();submitExam(true)}},1000);renderTimer()}
+function stopTimer(){if(timerId){clearInterval(timerId);timerId=null}}
+function renderTimer(){const t=$("#ex-timer");t.textContent=fmtTime(Math.max(0,state.time));const wrap=t.closest("span");if(wrap){wrap.id="timer";wrap.classList.toggle("warn",state.time<=300)}}
+
+/* ---------- question render ---------- */
+function renderQ(){
+ const i=state.cur,q=Q[i];
+ $("#ex-progress").textContent=i+1;$("#ex-total").textContent=N;
+ $("#ex-answered").textContent=state.answers.filter(a=>a!==null).length;
+ $("#ex-flagged").textContent=state.flags.filter(Boolean).length;
+ $("#ex-flag-txt").textContent=state.flags[i]?"Unflag":"Flag for review";
+ $("#ex-question-card").innerHTML=`
+  <div class="flex flex-wrap gap-2 mb-4"><span class="tag tag-core">${CATS[q.c]}</span><span class="tag ${["tag-beg","tag-int","tag-adv"][q.l]}">${LEVELS[q.l]}</span><span class="tag tag-core">Question ${i+1} of ${N}</span></div>
+  <fieldset>
+   <legend class="text-xl font-bold leading-snug mb-4">${q.q}</legend>
+   <div class="space-y-2" role="radiogroup" aria-label="Answer options">
+   ${q.o.map((o,k)=>`<label class="q-opt ${state.answers[i]===k?"selected":""}"><input type="radio" name="q${i}" value="${k}" ${state.answers[i]===k?"checked":""} aria-label="Option ${k+1}"><span class="flex-1">${o}</span><span class="mono text-xs text-[#A8AFBD]">${k+1}</span></label>`).join("")}
+   </div>
+  </fieldset>`;
+ $$("#ex-question-card input").forEach(inp=>inp.addEventListener("change",()=>{state.answers[state.cur]=+inp.value;save();renderQ();renderPalette()}));
+ $("#ex-prev").disabled=i===0;$("#ex-next").textContent=i===N-1?"Finish":"Next";
+ renderPalette();
+}
+function renderPalette(){
+ $("#ex-palette").innerHTML=state.answers.map((a,i)=>`<button class="pal-btn ${i===state.cur?"current":""} ${a!==null?"answered":""} ${state.flags[i]?"flagged":""}" data-pal="${i}" aria-label="Question ${i+1}${a!==null?", answered":""}${state.flags[i]?", flagged":""}">${i+1}</button>`).join("");
+}
+$("#ex-palette").onclick=e=>{const b=e.target.closest("[data-pal]");if(!b)return;state.cur=+b.dataset.pal;save();renderQ()};
+$("#ex-prev").onclick=()=>{if(state.cur>0){state.cur--;save();renderQ()}};
+$("#ex-next").onclick=()=>{if(state.cur<N-1){state.cur++;save();renderQ()}else{submitExam(false)}};
+$("#ex-flag").onclick=()=>{state.flags[state.cur]=!state.flags[state.cur];save();renderQ()};
+addEventListener("keydown",e=>{
+ if(!state.started||state.submitted)return;
+ if(/INPUT|TEXTAREA/.test(document.activeElement.tagName))return;
+ const k=e.key;
+ if(k>="1"&&k<="4"){const idx=+k-1;if(idx<Q[state.cur].o.length){state.answers[state.cur]=idx;save();renderQ();renderPalette()}}
+ else if(k==="ArrowRight"){$("#ex-next").click()}
+ else if(k==="ArrowLeft"){$("#ex-prev").click()}
+ else if(k==="f"||k==="F"){$("#ex-flag").click()}
+});
+
+/* ---------- submit ---------- */
+function submitExam(auto){
+ const un=N-state.answers.filter(a=>a!==null).length;
+ if(!auto&&un>0){if(!confirm(`You have ${un} unanswered question${un>1?"s":""}. Submit anyway?`))return}
+ stopTimer();
+ state.submitted=true;
+ let score=0;Q.forEach((q,i)=>{if(state.answers[i]===q.a)score++});
+ state.score=Math.round(score/N*100);
+ store("ai_exam_state",{...state,submitted:true});
+ const best=load("ai_exam_best",null);
+ if(!best||state.score>best.score)store("ai_exam_best",{score:state.score,date:new Date().toLocaleDateString(),passed:state.score>=PASS_MARK});
+ show("results");renderResults();
+}
+$("#ex-submit").onclick=()=>submitExam(false);
+
+/* ---------- results ---------- */
+function renderResults(){
+ const passed=state.score>=PASS_MARK;
+ $("#ex-ring").style.strokeDashoffset=527.8*(1-state.score/100);
+ $("#ex-score").textContent=state.score+"%";
+ $("#ex-score-sub").textContent=`${Math.round(state.score/100*N)} of ${N} correct`;
+ $("#ex-verdict").textContent=passed?"PASSED":"NOT PASSED";
+ $("#ex-verdict").className="display text-2xl font-bold mt-2 "+(passed?"text-[#20D9C2]":"text-[#FF8A80]");
+ $("#ex-verdict-sub").textContent=passed?"You met the 70% pass mark. Your certificate is ready below.":"You need 70% to pass. Review the questions below, study the linked lessons, and retake the exam.";
+ $("#ex-result-head").innerHTML=`<span class="eyebrow">Results</span><h2 class="text-3xl font-bold mt-3">${state.name}, here is your result</h2>`;
+ // breakdown
+ $("#ex-breakdown").innerHTML=CATS.map(c=>{const idx=Q.map((q,i)=>[q,i]).filter(([q])=>CATS[q.c]===c).map(([,i])=>i);const ok=idx.filter(i=>state.answers[i]===Q[i].a).length;return `<div><div class="flex justify-between text-sm"><span>${c}</span><span class="mono">${ok}/${idx.length}</span></div><div class="h-2 bg-white/5 rounded-full mt-1 overflow-hidden"><div class="h-full rounded-full ${ok===idx.length?"bg-[#20D9C2]":ok>0?"bg-[#FFB547]":"bg-[#FF3B30]"}" style="width:${ok/idx.length*100}%"></div></div></div>`}).join("");
+ // certificate
+ state.certDate=new Date().toLocaleDateString(undefined,{year:"numeric",month:"long",day:"numeric"});
+ state.certId="AIC-"+new Date().toISOString().slice(0,10).replace(/-/g,"")+"-"+Math.random().toString(36).slice(2,6).toUpperCase();
+ store("ai_exam_cert",{name:state.name,score:state.score,date:state.certDate,id:state.certId});
+ if(passed){$("#ex-cert-actions").classList.remove("hidden");$("#ex-cert-note").textContent=`Issued to ${state.name} · Score ${state.score}% · ${state.certDate} · Certificate ID ${state.certId}`;drawCert();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>drawCert());}
+ else{$("#ex-cert-locked").classList.remove("hidden");$("#ex-cert-locked").innerHTML=`<b>Certificate locked.</b> Score ${state.score}% — the pass mark is ${PASS_MARK}%. Review your mistakes below, revisit the linked lessons in the course, then retake the exam. A new certificate will be generated automatically.`;drawCertPlaceholder();}
+ // review
+ $("#ex-review").innerHTML=Q.map((q,i)=>{const ua=state.answers[i],ok=ua===q.a;return `<div class="card p-4 ${ok?"border-[#20D9C2]/40":"border-[#FF3B30]/40"}"><div class="flex flex-wrap gap-2 mb-2"><span class="tag tag-core">Q${i+1}</span><span class="tag tag-core">${CATS[q.c]}</span><span class="tag ${ok?"tag-beg":"tag-pro"}">${ok?"Correct":"Incorrect"}</span></div><p class="font-semibold mb-2">${q.q}</p><div class="space-y-1.5">${q.o.map((o,k)=>`<div class="q-opt ${k===q.a?"correct":k===ua?"wrong":""} !cursor-default"><span class="mono text-xs ${k===q.a?"text-[#20D9C2]":k===ua?"text-[#FF8A80]":"text-[#A8AFBD]"}">${k+1}</span><span class="flex-1">${o}</span>${k===q.a?'<i data-lucide="check" class="w-4 h-4 text-[#20D9C2]"></i>':k===ua?'<i data-lucide="x" class="w-4 h-4 text-[#FF8A80]"></i>':""}</div>`).join("")}</div><p class="text-sm text-[#A8AFBD] mt-3"><b class="text-white">Why:</b> ${q.e}</p></div>`}).join("");
+ icons();
+}
+$("#ex-retake").onclick=()=>{if(!confirm("Discard this attempt and start a new exam?"))return;store("ai_exam_state",null);state.answers=Array(N).fill(null);state.flags=Array(N).fill(false);state.cur=0;state.time=TIME_LIMIT;state.started=false;state.submitted=false;show("home");home()};
+
+/* ---------- certificate canvas ---------- */
+function drawCert(){
+ const cv=$("#ex-canvas"),x=cv.getContext("2d"),W=cv.width,H=cv.height;
+ const name=state.name||"Student",score=state.score,id=state.certId,date=state.certDate;
+ x.fillStyle="#F8F4EA";x.fillRect(0,0,W,H);
+ // subtle pattern
+ x.strokeStyle="rgba(27,27,27,.05)";x.lineWidth=1;
+ for(let i=0;i<W;i+=48){x.beginPath();x.moveTo(i,0);x.lineTo(i,H);x.stroke()}
+ for(let j=0;j<H;j+=48){x.beginPath();x.moveTo(0,j);x.lineTo(W,j);x.stroke()}
+ // borders
+ x.strokeStyle="#1B1B1B";x.lineWidth=4;x.strokeRect(36,36,W-72,H-72);
+ x.strokeStyle="#C8A15A";x.lineWidth=2;x.strokeRect(54,54,W-108,H-108);
+ // corner ornaments
+ x.fillStyle="#C8A15A";
+ [[36,36],[W-36,36],[36,H-36],[W-36,H-36]].forEach(([cx,cy])=>{x.fillRect(cx-7,cy-7,14,14)});
+ // Ai badge
+ const bx=W/2-60,by=96;x.fillStyle="#330000";x.strokeStyle="#FF9A00";x.lineWidth=4;
+ roundRect(x,bx,by,120,120,26,true,true);
+ x.fillStyle="#FF9A00";x.font="700 62px 'Space Grotesk',Arial";x.textAlign="center";x.textBaseline="middle";
+ x.fillText("Ai",W/2,by+66);
+ // titles
+ x.fillStyle="#1B1B1B";x.font="600 30px 'Space Grotesk',Arial";x.fillText("C E R T I F I C A T E   O F   C O M P L E T I O N",W/2,300);
+ x.strokeStyle="#C8A15A";x.lineWidth=2;
+ x.beginPath();x.moveTo(W/2-260,326);x.lineTo(W/2-90,326);x.moveTo(W/2+90,326);x.lineTo(W/2+260,326);x.stroke();
+ x.font="italic 700 30px 'Playfair Display',Georgia";x.fillText("This is to certify that",W/2,386);
+ // name (fit to width)
+ let fs=88;x.fillStyle="#1B1B1B";x.font=`italic 700 ${fs}px 'Playfair Display',Georgia`;
+ while(x.measureText(name).width>1150&&fs>40){fs-=4;x.font=`italic 700 ${fs}px 'Playfair Display',Georgia`}
+ x.fillText(name,W/2,492);
+ x.strokeStyle="#C8A15A";x.lineWidth=1.5;x.beginPath();x.moveTo(W/2-x.measureText(name).width/2-30,512);x.lineTo(W/2+x.measureText(name).width/2+30,512);x.stroke();
+ x.fillStyle="#444";x.font="400 30px Inter,Arial";x.fillText("has successfully completed the final examination of the course",W/2,566);
+ x.fillStyle="#1B1B1B";x.font="700 42px 'Space Grotesk',Arial";x.fillText("Adobe Illustrator — Professional Graphic Design Course",W/2,636);
+ x.fillStyle="#444";x.font="400 28px Inter,Arial";
+ x.fillText(`Final score: ${score}%   ·   Pass mark: ${PASS_MARK}%   ·   Result: ${score>=PASS_MARK?"PASS":"FAIL"}`,W/2,692);
+ x.font="400 24px 'JetBrains Mono',monospace";x.fillStyle="#777";
+ x.fillText(`Issued: ${date}    ·    Certificate ID: ${id}`,W/2,736);
+ // signatures
+ x.strokeStyle="#1B1B1B";x.lineWidth=1.5;
+ [[W/2-420,"Course Director"],[W/2+420,"Lead Instructor"]].forEach(([sx,label])=>{
+  x.beginPath();x.moveTo(sx-190,880);x.lineTo(sx+190,880);x.stroke();
+  x.font="400 22px Inter,Arial";x.fillStyle="#777";x.fillText(label,sx,912);
+  x.font="italic 400 20px 'Playfair Display',Georgia";x.fillStyle="#1B1B1B";x.fillText(label==="Course Director"?"A. Rivera":"M. Okafor",sx,862);
+ });
+ // seal
+ const sx=W/2+430,sy=880;
+ x.strokeStyle="#C8A15A";x.lineWidth=4;x.beginPath();x.arc(sx,sy,74,0,7);x.stroke();
+ x.lineWidth=2;x.beginPath();x.arc(sx,sy,60,0,7);x.stroke();
+ x.fillStyle="#C8A15A";x.font="700 26px 'Space Grotesk',Arial";x.fillText("VERIFIED",sx,sy-6);
+ x.font="400 16px Inter,Arial";x.fillText("70%+",sx,sy+22);
+ // footer
+ x.fillStyle="#999";x.font="400 17px Inter,Arial";
+ x.fillText("Independent educational course — not an Adobe certification. Verify this certificate with the Certificate ID above.",W/2,1020);
+ x.textAlign="left";
+}
+function roundRect(x,px,py,w,h,r,fill,stroke){x.beginPath();x.moveTo(px+r,py);x.arcTo(px+w,py,px+w,py+h,r);x.arcTo(px+w,py+h,px,py+h,r);x.arcTo(px,py+h,px,py,r);x.arcTo(px,py,px+w,py,r);x.closePath();if(fill)x.fill();if(stroke)x.stroke()}
+function drawCertPlaceholder(){const cv=$("#ex-canvas"),x=cv.getContext("2d"),W=cv.width,H=cv.height;x.fillStyle="#F8F4EA";x.fillRect(0,0,W,H);x.strokeStyle="#1B1B1B";x.lineWidth=4;x.strokeRect(36,36,W-72,H-72);x.strokeStyle="#C8A15A";x.lineWidth=2;x.strokeRect(54,54,W-108,H-108);x.fillStyle="#999";x.textAlign="center";x.font="700 44px 'Space Grotesk',Arial";x.fillText("EXAM RESULT — NOT PASSED",W/2,H/2-30);x.font="400 28px Inter,Arial";x.fillText(`Score ${state.score}% · pass mark ${PASS_MARK}% · retake to earn your certificate`,W/2,H/2+20);x.textAlign="left"}
+$("#ex-dl").onclick=()=>{const a=document.createElement("a");a.download=`certificate-${state.certId}.png`;a.href=$("#ex-canvas").toDataURL("image/png");a.click();toast("Certificate downloaded ✓")};
+$("#ex-print").onclick=()=>{const url=$("#ex-canvas").toDataURL("image/png");const w=window.open("","_blank");w.document.write(`<html><head><title>Certificate ${state.certId}</title></head><body style="margin:0;background:#fff;display:grid;place-items:center"><img src="${url}" style="width:100%;max-width:1122px"></body></html>`);w.document.close();const img=w.document.querySelector("img");const go=()=>{w.print();w.close()};img.complete?setTimeout(go,300):img.onload=()=>setTimeout(go,100)};
+$("#ex-copy-id").onclick=()=>{const code=`${state.name}|${state.score}%|${state.certDate}|${state.certId}`;navigator.clipboard?navigator.clipboard.writeText(code).then(()=>toast("Verification code copied ✓")):toast(code)};
+function toast(msg){const t=document.createElement("div");t.textContent=msg;t.style.cssText="position:fixed;left:50%;bottom:24px;transform:translate(-50%,10px);background:#1C2230;border:1px solid rgba(255,255,255,.15);padding:.7rem 1.1rem;border-radius:.8rem;z-index:99;opacity:0;transition:.3s;font-size:.9rem";document.body.appendChild(t);requestAnimationFrame(()=>{t.style.opacity=1;t.style.transform="translate(-50%,0)"});setTimeout(()=>{t.style.opacity=0;setTimeout(()=>t.remove(),300)},2600)}
+
+/* init */
+home();icons();
+if("serviceWorker" in navigator&&location.protocol!=="file:"){navigator.serviceWorker.register("sw.js").catch(()=>{})}
+</script>
+</body>
+</html>
